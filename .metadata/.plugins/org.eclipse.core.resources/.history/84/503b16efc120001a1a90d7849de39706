@@ -1,0 +1,18 @@
+//
+public class PracticeRe52 {
+
+	public static void main(String[] args) {
+		
+		Box b0 = new Box();
+		Box b1 = new Box();
+		Box b2 = new Box();
+		
+		System.out.println("디폴트 상자의 정보입니다.");
+		System.out.println(b0.toString());
+		b1.setX(30);
+		b1.setY(45);
+		b1.setZ(53);
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+public class Date  {
+	private int year; 
+	private int month; 
+	private int day;
+	public String toString() {...} // 설정자 메소드 수정 // 접근자 메소드
+}

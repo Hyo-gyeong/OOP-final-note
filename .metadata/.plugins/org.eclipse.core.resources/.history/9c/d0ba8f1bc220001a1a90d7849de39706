@@ -1,0 +1,54 @@
+
+public class Box {
+	private int x, y, z;
+	private boolean empty;
+	
+	public Box() {
+		this.x = 0;
+		this.y = 0;
+		this.z = 0;
+		this.empty = true;
+	}
+	public Box(int x, int y, int z) {
+		setX(x);
+		setY(y);
+		setZ(z);
+		this.empty = false;
+	}
+	
+	public void setX(int x) {
+		this.x = x;
+	}
+	public void setY(int y) {
+		this.y = y;
+	}
+	public void setZ(int z) {
+		this.z = z;
+	}
+	
+	public int getX() {
+		return this.x;
+	}
+	public int getY() {
+		return this.y;
+	}
+	public int getZ() {
+		return this.z;
+	}
+	
+	public void fillBox() {
+		this.empty = false;
+	}
+	public void emptyBox() {
+		this.empty = true;
+	}
+	
+	public String toString() {
+		if (this.empty == true) {
+			return "가로: "+getX()+"cm\n세로: "+getY()+"cm\n높이: "+getZ()+"cm\n지금 박스에는 물건이 들어 있습니다";
+		}
+		else {
+			return "가로: "+getX()+"cm\n세로: "+getY()+"cm\n높이: "+getZ()+"cm\n지금 박스는 비어 있습니다."; 
+		}
+	}
+}

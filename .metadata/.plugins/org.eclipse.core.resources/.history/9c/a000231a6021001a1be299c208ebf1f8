@@ -1,0 +1,9 @@
+
+public abstract class Circle extends Shape{
+	int radius;
+	
+	@Override
+	public String toString() {
+		return "타입: 도형\n중심좌표: ("+x+", "+this.y+")";
+	}
+}

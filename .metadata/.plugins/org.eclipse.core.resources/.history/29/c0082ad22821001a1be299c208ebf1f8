@@ -1,0 +1,12 @@
+//
+public class PracticeRe57 {
+	
+	public static void main (String[] args) {
+		
+		System.out.println("영화 정보를 입력하세요.");
+		System.out.print("영화제목은?");
+		System.out.print("감독은?");
+		System.out.print("제작사는? ");
+		
+	}
+}

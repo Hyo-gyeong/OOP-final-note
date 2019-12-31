@@ -1,0 +1,12 @@
+//
+import java.util.Random;
+public class PracticeRe53 {
+
+	public static void main(String[] args) {
+		
+		Random r = new Random();
+		
+		System.out.println("디폴트 영화의 정보입니다.");
+	}
+
+}

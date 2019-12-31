@@ -1,0 +1,7 @@
+
+public class Lion extends Animal{
+	private int eng = 4;
+	void roar() {
+		System.out.println("roar() 호출되었음.");
+	}
+}

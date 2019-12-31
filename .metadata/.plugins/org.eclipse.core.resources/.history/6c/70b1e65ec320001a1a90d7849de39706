@@ -1,0 +1,10 @@
+//
+import java.util.Random;
+public class PracticeRe52 {
+
+	public static void main(String[] args) {
+		Random rn = new Random(9000)+1000;
+		
+	}
+
+}

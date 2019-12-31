@@ -1,0 +1,28 @@
+
+public class Shape {
+	private int x, y;
+	
+	public void setX(int x) {
+		this.x = x;
+	}
+	public void setY() {
+		this.y = y;
+	}
+	public int getX() {
+		return this.x;
+	}
+	public int getY() {
+		return this.y;
+	}
+	
+	public int calcArea() {
+		return x*y;
+	}
+	
+	public String toString() {
+		return "타입 : 도형"+positionStr();
+	}
+	public String positionStr() {
+		return "("+x+", "+y+")";
+	}
+}

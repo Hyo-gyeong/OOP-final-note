@@ -1,0 +1,38 @@
+//
+import java.util.Scanner;
+public class PracticeRe59 {
+	public static int compareArea(Circle c1, Circle c2) {
+		if (c1.calcArea() > c2.calcArea()) {
+			return 1;
+		}
+		else if (c1.calcArea() == c2.calcArea()) {
+			return 0;
+		}
+		else {
+			return -1;
+		}
+	}
+
+	public static void main (String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		Shape info = new Shape();
+
+		System.out.print("Shape 객체 정보를 입력하세요.\n");
+		System.out.print("x좌표 : ");
+		info.x = input.nextInt();
+		System.out.print("y좌표 : ");
+		info.y = input.nextInt();
+		
+		System.out.print("\n첫번째 Circle 객체 정보를 입력하세요.\n");
+		System.out.print("x좌표 : ");
+		int x1 = input.nextInt();
+		System.out.print("y좌표 : ");
+		int y1 = input.nextInt();
+		System.out.print("반지름 : ");
+		int r1 = input.nextInt();
+		Circle c1 = new Circle(r1);
+		c1.x = x1;
+		c1.y = y1;
+	}
+}

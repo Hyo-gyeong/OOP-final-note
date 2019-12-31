@@ -1,0 +1,30 @@
+//
+public class PracticeRe50 {
+
+	public static void main(String[] args) {
+
+		Plane p1 = new Plane();
+		Plane p2 = new Plane();
+		Plane p3 = new Plane();
+		
+		System.out.println("디폴트 비행기의 정보입니다.");
+		p1.id = 0;
+		p1.model = "모름";
+		p1.capacity = 0;
+		System.out.println(p1.toString());
+		
+		System.out.println("제주행 비행기의 정보입니다.");
+		p1.id = 1030615;
+		p1.model = "보잉 737";
+		p1.capacity = 75;
+		System.out.println(p1.toString());
+		
+		System.out.println("디폴트 비행기의 정보입니다.");
+		p1.id = 0;
+		p1.model = "모름";
+		p1.capacity = 0;
+		System.out.println(p1.toString());
+		
+	}
+
+}

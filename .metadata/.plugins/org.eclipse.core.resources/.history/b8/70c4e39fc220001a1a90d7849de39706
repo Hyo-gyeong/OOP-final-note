@@ -1,0 +1,8 @@
+public class Plane {
+	int id, capacity;
+	String model;
+	
+	public String toString() {
+		return "½Äº°¹øÈ£: "+id+"Æí\n¸ðµ¨: "+model+"\n½Â°´¼ö: "+capacity+"¸í";
+	}
+}

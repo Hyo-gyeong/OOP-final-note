@@ -1,0 +1,9 @@
+
+public class Rectangle extends Shape{
+	private int length, width;
+	
+	@Override
+	public double calcArea() {
+		return length*width;
+	}
+}

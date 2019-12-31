@@ -1,0 +1,35 @@
+//
+import java.util.Scanner;
+public class PracticeRe55 {
+
+	public static void main (String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Plane p0 = new Plane();
+		
+		System.out.println("제주행 비행기의 정보를 입력하세요.");
+		System.out.print("식별번호: ");
+		p0.setId(sc.nextInt());
+		System.out.print("모델: ");
+		p0.setModel(sc.next());
+		System.out.print("승객수: ");
+		p0.setCapacity(sc.nextInt());
+		System.out.println("제주행 비행기의 정보입니다. ");
+		System.out.println(p0.toString());
+		System.out.println("현재까지 추가된 비행기는 모두 "+Plane.getPlanes()+"대입니다."); //p0.getPlanes()(x) -> public static int planes
+		
+		System.out.println("서울행 비행기의 정보를 입력하세요.");
+		System.out.print("식별번호: ");
+		int id = sc.nextInt();
+		System.out.print("모델: ");
+		String model = sc.next();
+		System.out.print("승객수: ");
+		int capacity = sc.nextInt();
+		System.out.println("제주행 비행기의 정보입니다. ");
+		Plane p1 = new Plane(id, capacity, model);
+		System.out.println(p1.toString());
+		System.out.println("현재까지 추가된 비행기는 모두 "+Plane.getPlanes()+"대입니다.");
+		
+		sc.close();
+	}
+}

@@ -1,0 +1,15 @@
+//
+public class PracticeRe81 {
+
+	public static void main(String[] args) {
+		Undergraduate u = new Undergraduate(3);
+		Graduate g = new Graduate("SE");
+		VisitingStudent v = new VisitingStudent;
+		
+		
+		System.out.println(u.toString());
+		System.out.println(g.toString());
+		System.out.println(v.toString());
+	}
+
+}

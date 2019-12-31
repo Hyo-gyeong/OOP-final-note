@@ -1,0 +1,41 @@
+//
+import java.util.Scanner;
+public class PracticeRe60 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Animal a = new Animal();
+		
+		System.out.println("Animal 객체 animal을 생성합니다.");
+		System.out.print("사진에 추가할 문장을 입력하세요:");
+		a.picture = sc.next();
+		System.out.print("몸무게를 입력하세요:");
+		a.setWeight(sc.nextDouble());
+		a.eat(); 
+		
+		Lion l = new Lion();
+		
+		System.out.println("Lion 객체 buba를 생성합니다.");
+		System.out.print("사진에 추가할 문장을 입력하세요:");
+		l.picture = sc.next();
+		System.out.print("몸무게를 입력하세요:");
+		l.setWeight(sc.nextDouble());
+		l.eat();
+		l.roar();
+		
+		lion.picture = "사자 그림";
+		lion.eat(); lion.sleep();
+		lion.roar(); lion.fly(); // compile error!!
+		
+		Eagle eagle = new Eagle();
+		eagle.eat();
+		eagle.sleep(); 
+		eagle.fly();
+		
+		
+
+	}
+
+}

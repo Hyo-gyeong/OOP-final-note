@@ -1,0 +1,10 @@
+//
+public class PracticeRe50 {
+
+	public static void main(String[] args) {
+
+		System.out.println("디폴트 비행기의 정보입니다.");
+		
+	}
+
+}

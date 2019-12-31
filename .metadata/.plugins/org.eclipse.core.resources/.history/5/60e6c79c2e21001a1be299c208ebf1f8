@@ -1,0 +1,96 @@
+import java.util.Random;
+public class BankAccount {
+	
+	Random rn = new Random();
+
+	private String name, accoutNo; 
+	private int balance; 
+	private double interest;
+	
+	public BankAccount() {
+		this("¸ð¸§", 0, 0);
+	}
+	public BankAccount(String name, int balance) {
+		this(name, balance, 0);
+	}
+	public BankAccount(String name, int balance, double interest) {
+		this.name = name;
+		this.balance = balance;
+		this.interest = interest;
+	}
+
+	public void setName(String a)
+	{
+		name = a; 
+	}
+	public void setAccoutNo(String b)
+	{
+		accoutNo = b; 
+	}
+	public void setBalance(int c)
+	{
+		balance = c; 
+	}
+	public void setRate(double d)
+	{
+		interest = d; 
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+	public String getAccountNo() {
+		return this.accoutNo;
+	}
+	public int getBalance() {
+		return this.balance;
+	}
+	public double getInterest() {
+		return this.interest;
+	}
+	
+	private String makeID() {
+		int r1 = rn.nextInt(9000)+1000;
+		int r2 = rn.nextInt(9000)+1000;
+		return r1+"-"+r2;
+	}
+	
+	private int calcInterest() {
+		return (int)calcInterest(balance, interest);
+	}
+	
+	public String toString()   
+	{
+		return makeID()+" :: "+getName()+" :: "+getBalance()+"¿ø :: "+calcInterest()+"%";
+	} 
+	private double calcInterest(int balance, double interest)  
+	{
+		return balance * interest / 100;
+	}
+	
+	public boolean deposit(int money) {
+		if (money < 0) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+	public boolean withdraw(int money) {
+		if (money > balance) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+	public static boolean transfer(BankAccount from, BankAccount to, int money) {
+		if (from.withdraw(money) == true && to.deposit(money) == true) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+}

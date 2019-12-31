@@ -1,0 +1,29 @@
+
+public class Triangle extends Shape{
+
+	private int base, height;
+	
+	public int getBase() {
+		return this.base;
+	}
+	public int getHeight() {
+		return this.height;
+	}
+	
+	public void setLength(int l) {
+		this.base = l;
+	}
+	public void setWidth(int w) {
+		this.height = w;
+	}
+	
+	@Override
+	public double calcArea() {
+		return getBase()*getHeight();
+	}
+	
+	@Override
+	public String toString() {
+		return "타입 : 사각형\n"+super.positionStr()+"가로 : "+getBase()+", 세로 : "+getHeight()+", 면적 : "+ calcArea();
+	}
+}

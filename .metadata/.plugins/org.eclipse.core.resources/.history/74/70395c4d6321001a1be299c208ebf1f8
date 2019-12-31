@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class PracticeRe83 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		Rectangle r = new Rectangle(30,35);
+		Triangle t = new Triangle(40,45);
+		Circle c = new Circle(50, 53);
+		
+
+		r.setLength(32);
+		r.setWidth(31);
+		
+		t.setBase(50);
+		t.setHeight(60);
+		
+		c.setRadius(10);
+		
+		System.out.println("\n"+r.toString());
+		System.out.println("\n"+t.toString());
+		System.out.println("\n"+c.toString());
+		
+		input.close();
+	}
+
+}

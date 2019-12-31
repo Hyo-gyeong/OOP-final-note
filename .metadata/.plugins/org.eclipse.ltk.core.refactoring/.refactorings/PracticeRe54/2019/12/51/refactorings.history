@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BankAccount.java&apos; to &apos;PracticeRe58/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;PracticeRe54&apos;&#x0D;&#x0A;- Destination element: &apos;PracticeRe58/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;BankAccount.java&apos;" description="Copy compilation unit" destination="=PracticeRe58/src&lt;" element1="/src&lt;{BankAccount.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1576627936761" units="1" version="1.0"/>
+</session>

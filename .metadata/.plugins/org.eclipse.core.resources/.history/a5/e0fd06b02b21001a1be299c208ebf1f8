@@ -1,0 +1,14 @@
+//
+import java.util.Scanner;
+public class PracticeRe58 {
+	
+	public static void main (String[] args) {
+		
+		BankAccount b0 = new BankAccount();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("은행 계좌 모두의 정보입니다. ");
+		System.out.println(b0.toString());
+	}
+}

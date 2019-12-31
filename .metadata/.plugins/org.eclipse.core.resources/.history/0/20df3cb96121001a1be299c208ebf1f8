@@ -1,0 +1,13 @@
+
+public class Circle extends Shape{
+	int radius;
+	
+	Circle(int x, int y){
+		super(x, y);
+	}
+	
+	@Override
+	public String toString() {
+		return "타입: 원\n"+super.type+", 반지름: "+radius+", 면적: "+;
+	}
+}

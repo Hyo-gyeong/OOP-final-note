@@ -1,0 +1,15 @@
+//
+import java.util.Scanner;
+public class PracticeRe55 {
+
+	public static void main (String[] args) {
+		
+		
+		System.out.println("제주행 비행기의 정보를 입력하세요.");
+		System.out.print("식별번호: ");
+		System.out.print("모델: ");
+		System.out.print("승객수: ");
+		System.out.println("제주행 비행기의 정보입니다. ");
+		
+	}
+}

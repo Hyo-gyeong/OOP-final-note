@@ -1,0 +1,23 @@
+//
+import java.util.Scanner;
+public class PracticeRe56 {
+
+	public static void main(String[] args) {
+
+		Date d1 = new Date();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("첫 번째 날짜를 입력하세요");
+		System.out.print("년도 : ");
+		d1.setYear(sc.nextInt());
+		System.out.print("월 : ");
+		d1.setMonth(sc.nextInt());
+		System.out.print("일 : ");
+		System.out.println("두 번째 날짜를 입력하세요");
+		System.out.print("년도 : ");
+		System.out.print("월 : ");
+		System.out.print("일 : ");
+
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class Rectangle {
+	private int length, width;
+	
+	@Override
+	public double calcArea() {
+		return length*width;
+	}
+}

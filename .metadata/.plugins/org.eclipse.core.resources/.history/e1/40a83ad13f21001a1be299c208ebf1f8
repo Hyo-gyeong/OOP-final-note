@@ -1,0 +1,23 @@
+
+public class Animal {
+	 private double weight;
+	 String picture; 
+	 
+	 public void setWeight(double w) {
+		 this.weight = w;
+	 }
+	 public int getWeight() {
+		 return this.weight;
+	 }
+	 
+	 private String printMsg()  {
+		 return ("eat()가 호출되었음");
+	 }
+	 void eat()  {
+		 String msg = printMsg(); 
+		 System.out.print(msg); 
+	 } 
+	 void sleep()  { 
+		 System.out.println("sleep()가 호출되었음");
+	 } 
+}
